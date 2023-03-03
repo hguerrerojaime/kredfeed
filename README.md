@@ -10,6 +10,10 @@ $ cd api
 and
 
 ```bash
+$ npm install
+```
+
+```bash
 $ npm run build && npm start
 ```
 
