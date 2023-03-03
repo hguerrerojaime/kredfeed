@@ -7,6 +7,13 @@ Change to the api directory
 $ cd api
 ```
 
+Create a database called kredfeed in your postgres client and
+Setup an environment variable for de DB connection
+
+```bash
+$ export DATABASE_URL="postgresql://postgres@localhost:5432/kredfeed?schema=public" 
+```
+
 and
 
 ```bash
