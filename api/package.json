@@ -4,7 +4,7 @@
   "description": "KreedFeed API",
   "main": "index.js",
   "scripts": {
-    "build": "npx tsc",
+    "build": "npx prisma migrate dev --name init && npx tsc",
     "start": "node dist/index.js",
     "dev": "node_modules/.bin/concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
   },
