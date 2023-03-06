@@ -1,5 +1,6 @@
 import express, { Express, Request, Response } from 'express'
 import dotenv from 'dotenv'
+import cors from 'cors'
 import { Person } from './types'
 import { PersonService, HttpException } from './components'
 
@@ -9,6 +10,7 @@ const app: Express = express()
 const port = process.env.PORT || 8080
 
 app.use(express.json())
+app.use(cors())
 
 app.get('/person/:id', async (req: Request, res: Response) => {
   const { id } = req.params
